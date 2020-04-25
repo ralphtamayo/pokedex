@@ -1,0 +1,108 @@
+// Type Colors
+$type-colors: (
+	'normal': #A8A878,
+	'fire': #F08030,
+	'fighting': #C03028,
+	'water': #6890F0,
+	'flying': #A890EF,
+	'grass': #78C850,
+	'poison': #A040A0,
+	'electric': #F8D030,
+	'ground': #E0C069,
+	'psychic': #F85888,
+	'rock': #B8A038,
+	'ice': #98D8D8,
+	'bug': #A8B820,
+	'dragon': #7038F8,
+	'ghost': #705898,
+	'dark': #705848,
+	'steel': #B8B8D0,
+	'fairy': #EE99AC,
+	'qmark': #68A090,
+);
+
+@function type-color($key) {
+	@return map-get($type-colors, $key);
+}
+
+@mixin badge-bg($color) {
+	background-color: type-color($color);
+	color: #FFF;
+}
+
+.badge-normal {
+	@include badge-bg('normal');
+}
+
+.badge-fire {
+	@include badge-bg('fire');
+}
+
+.badge-fighting {
+	@include badge-bg('fighting');
+}
+
+.badge-water {
+	@include badge-bg('water');
+}
+
+.badge-flying {
+	@include badge-bg('flying');
+}
+
+.badge-grass {
+	@include badge-bg('grass');
+	color: #FFF;
+}
+
+.badge-poison {
+	@include badge-bg('poison');
+}
+
+.badge-electric {
+	@include badge-bg('electric');
+}
+
+.badge-ground {
+	@include badge-bg('ground');
+}
+
+.badge-psychic {
+	@include badge-bg('psychic');
+}
+
+.badge-rock {
+	@include badge-bg('rock');
+}
+
+.badge-ice {
+	@include badge-bg('ice');
+}
+
+.badge-bug {
+	@include badge-bg('bug');
+}
+
+.badge-dragon {
+	@include badge-bg('dragon');
+}
+
+.badge-ghost {
+	@include badge-bg('ghost');
+}
+
+.badge-dark {
+	@include badge-bg('dark');
+}
+
+.badge-steel {
+	@include badge-bg('steel');
+}
+
+.badge-fairy {
+	@include badge-bg('fairy');
+}
+
+.badge-qmark {
+	@include badge-bg('qmark');
+}
