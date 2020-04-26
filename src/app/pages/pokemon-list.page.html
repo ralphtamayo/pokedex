@@ -1,0 +1,5 @@
+<div class="row" *ngIf="pokemons != null">
+	<div class="col-sm-4 col-lg-2" *ngFor="let pokemon of pokemons.results">
+		<pokemon-card [pokemon]="pokemon"></pokemon-card>
+	</div>
+</div>
