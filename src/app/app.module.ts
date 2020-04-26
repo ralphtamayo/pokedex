@@ -8,17 +8,17 @@ import { TypeBadgeComponent } from './components/type-badge.component';
 
 const routes: Routes = [];
 @NgModule({
-  declarations: [
-	AppComponent,
-	PokemonCardComponent,
-	TypeBadgeComponent,
-  ],
-  imports: [
-    BrowserModule,
-    RouterModule.forRoot(routes)
-  ],
-  exports: [RouterModule],
-  providers: [],
-  bootstrap: [AppComponent]
+	declarations: [
+		AppComponent,
+		PokemonCardComponent,
+		TypeBadgeComponent,
+	],
+	imports: [
+		BrowserModule,
+		RouterModule.forRoot(routes)
+	],
+	exports: [RouterModule],
+	providers: [],
+	bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -12,7 +12,7 @@ export class TypeBadgeComponent {
 	}
 
 	get badgeBg() {
-		return `badge-${ this.type }`;
+		return `badge-${this.type}`;
 	}
 }
 
