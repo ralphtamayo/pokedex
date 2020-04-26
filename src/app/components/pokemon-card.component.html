@@ -1,10 +1,9 @@
-<div class="card">
+<div class="card mb-4" *ngIf="pokemon != null">
 	<div class="card-body">
-		<img class="img-fluid" src="/assets/images/portraits/001.png" />
 		<div class="card-title">
-			<h5>Bulbasaur</h5>
-			<h6 class="card-subtitle mb-2 text-muted">#001</h6>
+			<h5>{{ pokemon.name | titlecase }}</h5>
+			<!-- <h6 class="card-subtitle mb-2 text-muted">#001</h6> -->
 		</div>
-		<type-badge type="grass"></type-badge>
+		<!-- <type-badge type="grass"></type-badge> -->
 	</div>
 </div>
