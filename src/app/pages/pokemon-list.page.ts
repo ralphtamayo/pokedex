@@ -25,6 +25,7 @@ export class PokemonListPage implements OnInit {
 			listing.results.forEach((pokemon, index) => {
 				this.api.get(pokemon.url).subscribe(pokemon => {
 					this.pokemons[index] = pokemon;
+					this.pokemons[index].picture = `https://pokeres.bastionbot.org/images/pokemon/${pokemon.id}.png`;
 				});
 			});
 		});

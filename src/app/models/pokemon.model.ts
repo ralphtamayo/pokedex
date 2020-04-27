@@ -7,6 +7,7 @@ export interface PokemonDetails {
 	order: number;
 	weight: number;
 	sprites: PokemonSprites;
+	picture: string;
 }
 
 export interface PokemonSprites {
