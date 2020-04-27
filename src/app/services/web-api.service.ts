@@ -15,4 +15,8 @@ export class WebApiService {
 	pokemonDetails(id: number): Observable<PokemonDetails> {
 		return this.http.get<PokemonDetails>(`${environment.apiUrl}/pokemon/${id}`);
 	}
+
+	get(url: string): Observable<PokemonDetails> {
+		return this.http.get<PokemonDetails>(url);
+	}
 }
